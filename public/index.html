@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a1a2f">
+<title>Drift — Message in a Bottle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="sea" role="img" aria-label="An animated ocean with message bottles drifting on the waves"></canvas>
+
+<header class="top">
+  <div class="brand">
+    <h1>Drift</h1>
+    <p>Write to a stranger. Let the sea carry it.</p>
+  </div>
+  <div class="tools">
+    <span class="chip status" id="status" title=""><i></i><span>…</span></span>
+    <button class="chip icon" id="btnTheme" title="Change the sky" aria-label="Change the sky">☀︎</button>
+    <button class="chip icon" id="btnSound" title="Sound of the sea" aria-label="Toggle sea sound">♪</button>
+  </div>
+</header>
+
+<div class="tip" id="tip"></div>
+
+<nav class="dock" id="dock">
+  <p class="hint">✦ Tap a drifting bottle to open it ✦</p>
+  <div class="btns">
+    <button class="btn" id="btnFind"><span>🍾</span> Find a bottle</button>
+    <button class="btn primary" id="btnWrite"><span>✒︎</span> Write a letter</button>
+    <button class="btn" id="btnMine"><span>⚓︎</span> My bottles <b class="badge" id="badge" hidden>0</b></button>
+  </div>
+</nav>
+
+<aside class="drawer" id="drawer" aria-label="My bottles">
+  <div class="dhead"><h2>My bottles</h2><button class="x" id="btnCloseDrawer" aria-label="Close">×</button></div>
+  <div id="list"></div>
+</aside>
+
+<div class="overlay" id="overlay"></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="seeds.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

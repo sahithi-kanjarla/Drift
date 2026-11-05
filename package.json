@@ -1,0 +1,9 @@
+{
+  "name": "drift-message-in-a-bottle",
+  "version": "1.0.0",
+  "description": "Write a letter, seal it in a bottle, throw it into the sea. A stranger somewhere will open it and write back.",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=16" },
+  "license": "MIT"
+}
